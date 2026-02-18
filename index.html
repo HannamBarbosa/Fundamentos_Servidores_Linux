@@ -1,160 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TecBlog - Home</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="shortcut icon" href="assets/img/icons8-blogger-96.png" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Fundamentos de Servidores Linux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <header id="header">
-      <!--HEADER AREA-->
+  <style>
+    :root {
+      --primary: #072249;
+      --accent: #9F0066;
+      --bg: #FFFFFF;
+      --text: #1a1a1a;
+      --card: #f4f6fb;
+    }
 
-      <div id="header-logo">
-        <h1 id="logo">Tec<span class="white">Blog</span></h1>
-      </div>
-      <nav id="nav">
-        <a href="#">Home</a>
-        <a href="#">Games</a>
-        <a href="#">Cell phones</a>
-        <a href="#">Computing</a>
-        <a href="#">Electronics</a>
-      </nav>
-    </header>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
 
-    <main id="area-main">
-      <!--MAIN AREA-->
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
 
-      <!--ABERTURA POSTAGEM-->
-      <div id="postagens">
-        <div class="posts">
-          <h2 class="title-post">Take a break and have coffee</h2>
-          <span class="data-post">Posted September 04, 2023</span>
-          <img src="assets/img/image1.jpg" alt="" class="img-post" />
-          <p class="text-post">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perspiciatis autem, minus debitis ipsa dignissimos ducimus, illo
-            aut, reprehenderit assumenda eum sed? Commodi numquam reiciendis
-            dicta ad esse! Corporis, nobis unde.
-          </p>
-          <a href="#" class="link-fomart">Read more</a>
-        </div>
+    header {
+      background: linear-gradient(135deg, var(--primary), #0d3a7a);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-        <div class="posts">
-          <h2 class="title-post">Home office benefits</h2>
-          <span class="data-post">Posted September 03, 2023</span>
-          <img src="assets/img/image2.jpg" alt="" class="img-post" />
-          <p class="text-post">
-            Ipsum dolor sit amet consectetur adipisicing elit. Eligendi officia,
-            consequatur, deserunt, cupiditate magnam eos suscipit nemo vitae
-            earum a pariatur fugit atque maiores laborum necessitatibus
-            quibusdam? Nesciunt, alias dolorum!
-          </p>
-          <a href="" class="link-fomart">Read More</a>
-        </div>
-      </div>
-      <!--FECHAMENTO POSTAGEM-->
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
 
-      <!-- ABETURA SIDE MENU-->
-      <div class="side-menu">
-        <div class="side-content">
-          <h3 class="side-title">Side Menu</h3>
-          <div class="side-posting">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              tenetur nihil sint quod reiciendis vero praesentium accusamus
-              vitae!
-            </p>
-            <a href="#" class="link-fomart">Read more</a>
-          </div>
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
 
-          <div class="side-posting">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              tenetur nihil sint quod reiciendis vero praesentium accusamus
-              vitae!
-            </p>
-            <a href="#" class="link-fomart">Read more</a>
-          </div>
-        </div>
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-        <div class="side-content">
-          <h3 class="side-title">Side Menu</h3>
-          <ul class="link-menu-side">
-            <a href="#">games</a>
-            <a href="#">cell phone</a>
-            <a href="#">informatics</a>
-            <a href="#">electronic</a>
-            <a href="#">games</a>
-          </ul>
-        </div>
-      </div>
-      <!-- FECHAMENTO SIDE MENU-->
-    </main>
-    <!--MAIN AREA FIM-->
+    .download {
+      text-align: center;
+      margin-top: 30px;
+    }
 
-    <!--ABERTURA RODAPÉ-->
-    <footer id="footer">
-      <div id="footer-content">
-    
-        <div id="footer-contacts">
-          <h1>Logo</h1>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-          <div id="footer_social_media">
-            <a class="footer-logos" href="#" id="instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-    
-            <a class="footer-logos" href="#" id="facebook">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-    
-            <a class="footer-logos" href="#" id="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-    
-        <ul class="footer-links">
-          <li><h3>Blog</h3></li>
-          <li><a class="footer-logo" href="#">Tech</a></li>
-          <li><a class="footer-logo" href="#">Adventures</a></li>
-          <li><a class="footer-logo" href="#">Music</a></li>
-        </ul>
-    
-        <ul class="footer-links">
-          <li><h3>Products</h3></li>
-          <li><a class="footer-logo" href="#">App</a></li>
-          <li><a class="footer-logo" href="#">Desktop</a></li>
-          <li><a class="footer-logo" href="#">Cloud</a></li>
-        </ul>
-    
-    
-        <div id="footer-subscribe">
-          <h3>Subscribe</h3>
-    
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure reiciendis sequi aut!</p>
-    
-          <div id="input_group">
-            <input type="email">
-            <button>
-              <i class="fa-regular fa-envelope"></i>
-            </button>
-          </div>
-        </div>
-  
-      </div>
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
 
-      <div id="footer-copyright">
-          &#169 2023 all rights reserved
-          
-      </div>
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
 
-    </footer>
-    <!--FECHAMENTO RODAPÉ-->
+    .btn-secondary {
+      background: var(--primary);
+    }
 
-  </body>
+    h2 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      margin-top: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border-left: 5px solid var(--accent);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .features li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 60px;
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.95rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 6px 12px;
+      border-radius: 6px;
+      margin: 5px;
+      font-size: 0.85rem;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fundamentos de Servidores Linux</h1>
+  <p>Guia prático para administração de sistemas e infraestrutura</p>
+
+  <div class="download">
+    <a class="btn" href="Fundamento de Servidore Linux.pdf" download>
+      📥 Baixar Apostila em PDF
+    </a>
+
+    <br><br>
+
+    <a class="btn btn-secondary" href="https://github.com/HannamBarbosa/Fundamentos_Servidores_Linux" target="_blank">
+      🌐 Acessar Repositório no GitHub
+    </a>
+  </div>
+
+  <div style="margin-top:25px;">
+    <span class="badge">Linux Server</span>
+    <span class="badge">Infraestrutura</span>
+    <span class="badge">NOC</span>
+    <span class="badge">Administração de Sistemas</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <h2>📖 Sobre o Material</h2>
+  <p>
+    Este guia apresenta os fundamentos essenciais para administração de servidores Linux
+    em ambientes profissionais. O conteúdo evolui de conceitos básicos até práticas reais
+    de operação, monitoramento e segurança.
+  </p>
+
+  <h2>🎯 O que você vai aprender</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Sistema Linux</h3>
+      <p>Estrutura, funcionamento e administração em ambiente servidor.</p>
+    </div>
+
+    <div class="card">
+      <h3>Terminal e Shell</h3>
+      <p>Execução de comandos e controle do sistema via linha de comando.</p>
+    </div>
+
+    <div class="card">
+      <h3>Usuários e Permissões</h3>
+      <p>Controle de acesso e segurança operacional.</p>
+    </div>
+
+    <div class="card">
+      <h3>Processos e Serviços</h3>
+      <p>Monitoramento, controle e diagnóstico do sistema.</p>
+    </div>
+
+    <div class="card">
+      <h3>Rede em Servidores</h3>
+      <p>Configuração de conectividade e testes de comunicação.</p>
+    </div>
+
+    <div class="card">
+      <h3>Boas Práticas</h3>
+      <p>Manutenção, logs, atualizações e segurança.</p>
+    </div>
+  </div>
+
+  <h2>👨‍💻 Aplicação Profissional</h2>
+  <ul class="features">
+    <li>Administração de servidores corporativos</li>
+    <li>Monitoramento de infraestrutura</li>
+    <li>Operação em NOC</li>
+    <li>Diagnóstico de incidentes</li>
+    <li>Suporte a serviços críticos</li>
+  </ul>
+
+</div>
+
+<footer>
+  Base sólida em Linux é base sólida em Infraestrutura<br>
+  Material educacional para formação em administração de servidores
+</footer>
+
+</body>
 </html>
