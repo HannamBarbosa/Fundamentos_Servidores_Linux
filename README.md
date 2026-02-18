@@ -1,6 +1,14 @@
 # 🐧 Fundamentos de Servidores Linux
 ### Guia Introdutório Prático para Administração de Sistemas
 
+> 📥 **Como acessar o conteúdo**
+>
+> Este repositório contém o material completo em formato PDF.
+>
+> 👉 Baixe o arquivo **Fundamento de Servidore Linux.pdf** disponível neste repositório para acessar a apostila completa.
+>
+
+ ---
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-Server%20Foundations-072249?style=for-the-badge&logo=linux&logoColor=white">
   <img src="https://img.shields.io/badge/Infraestrutura-NOC%20Ready-9F0066?style=for-the-badge">
